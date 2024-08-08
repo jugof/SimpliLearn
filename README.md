@@ -1,1 +1,4 @@
 # SimpliLearn
+
+The Learning Management System (LMS) is a web-based application designed to facilitate the management of educational courses, student enrollment, and progress tracking. This system consist three modules - Admin, Instructor and Student.  It provides a platform for students and instructors to interact, manage course materials, and assess student performance. The Instructor will create course on this platform and any student can purchase the course using credentials. For Students we provide interactive learning modules with a user friendly dashboard that provides real time insights into progress and achievements. This allows them to refine their skills and grow.
+The technology stack for this project is Java Spring Boot, MongoDB, ReactJS, TailwindCSS/Bootstrap.
