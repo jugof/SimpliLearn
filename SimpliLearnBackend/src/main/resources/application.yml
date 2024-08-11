@@ -1,0 +1,7 @@
+spring:
+data:
+mongodb:
+uri: mongodb+srv://juneds:6ZJPN7S9nbt7vjYH@cluster0.u715wfa.mongodb.net/
+database: SLdb
+server:
+ port: 6001
