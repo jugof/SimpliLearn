@@ -22,7 +22,7 @@ const Header = () => {
             <div className="start">
                 <div className="button ">
                   <Link to="/login">Login</Link>
-                  <Link to="/register">Register</Link>
+                  <Link to="/registration">Register</Link>
                 </div>
             </div>
             <button className='toggle' onClick={() => setClick(!click)}>

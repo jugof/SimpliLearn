@@ -20,7 +20,7 @@ const Footer = () => {
       <footer>
         <div className='container padding'>
           <div className='box logo'>
-            <h1>SIMPLILEARN</h1>
+            <h1>SIMPLI-LEARN</h1>
             <span>ONLINE EDUCATION & LEARNING</span>
             <p>E-learning can turn the world into a classroom.</p>
 
@@ -74,7 +74,7 @@ const Footer = () => {
             <ul>
               <li>
                 <i className='fa fa-map'></i>
-                203 Fake St. Mountain View,Block No. 14, Navi Mumbai.
+                203 Chappal Heritage St. Mountain View, Block No. 14, Mumbai.
               </li>
               <li>
                 <i className='fa fa-phone-alt'></i>
@@ -82,7 +82,7 @@ const Footer = () => {
               </li>
               <li>
                 <i className='fa fa-paper-plane'></i>
-                info@yourdomain.com
+                info@simplilearn.com
               </li>
             </ul>
           </div>
@@ -90,7 +90,7 @@ const Footer = () => {
       </footer>
       <div className='legal'>
         <p>
-          Copyright ©2022 All rights reserved  <i className='fa fa-heart'></i> 
+          Made with ❤️ Copyright ©2024 All rights reserved  <i className='fa fa-heart'></i> 
         </p>
       </div>
     </>
