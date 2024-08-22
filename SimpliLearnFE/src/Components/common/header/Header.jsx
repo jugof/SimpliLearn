@@ -20,9 +20,14 @@ const Header = () => {
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
             <div className="start">
-                <div className="button ">
-                  <Link to="/login">Login</Link>
-                  <Link to="/registration">Register</Link>
+                <div className="button gap-3 flex  ">
+                  <div className='text-white text-bold'>
+                    <Link to="/login">Login</Link>
+                  </div>
+                  <div>
+                    <Link to="/registration">Register</Link>
+                  </div>
+                  
                 </div>
             </div>
             <button className='toggle' onClick={() => setClick(!click)}>

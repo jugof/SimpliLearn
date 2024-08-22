@@ -11,6 +11,8 @@ import Footer from "./Components/common/footer/Footer"
 import Home from "./Components/home/Home"
 import Login from "./Components/registration/Login"
 import Registration from "./Components/registration/Registration"
+import AddCourse from "./Components/allcourses/AddCourse"
+import AddSection from "./Components/allcourses/AddSection"
 
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/registration' component={Registration} />
+          <Route exact path='/addcourse' component={AddCourse} />
+          <Route exact path='/addsection' component={AddSection} />
         </Switch>
         <Footer />
       </Router>
