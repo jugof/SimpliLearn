@@ -9,6 +9,10 @@ import Blog from "./Components/blog/Blog"
 import Contact from "./Components/contact/Contact"
 import Footer from "./Components/common/footer/Footer"
 import Home from "./Components/home/Home"
+import Login from "./Components/registration/Login"
+import Registration from "./Components/registration/Registration"
+
+
 function App() {
   return (
     <>
@@ -22,6 +26,8 @@ function App() {
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/journal' component={Blog} />
           <Route exact path='/contact' component={Contact} />
+          <Route exact path='/login' component={Login} />
+          <Route exact path='/registration' component={Registration} />
         </Switch>
         <Footer />
       </Router>
