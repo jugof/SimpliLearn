@@ -1,5 +1,4 @@
 import "./App.css"
-import Header from "./Components/common/header/Header"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import About from "./Components/about/About"
 import CourseHome from "./Components/allcourses/CourseHome"
@@ -7,19 +6,20 @@ import Team from "./Components/team/Team"
 import Pricing from "./Components/pricing/Pricing"
 import Blog from "./Components/blog/Blog"
 import Contact from "./Components/contact/Contact"
-import Footer from "./Components/common/footer/Footer"
 import Home from "./Components/home/Home"
 import Login from "./Components/registration/Login"
 import Registration from "./Components/registration/Registration"
 import AddCourse from "./Components/allcourses/AddCourse"
 import AddSection from "./Components/allcourses/AddSection"
+import Header from "./Components/common/header/Header"
+import Footer from "./Components/common/footer/Footer"
 
 
 function App() {
   return (
-    <>
+    <div>
       <Router>
-        <Header />
+        <Header/>
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
@@ -35,7 +35,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </>
+    </div>
   )
 }
 
