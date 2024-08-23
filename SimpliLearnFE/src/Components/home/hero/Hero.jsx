@@ -1,14 +1,17 @@
 import React from "react";
 import Heading from "../../common/heading/Heading";
 import "./Hero.css";
-import { Redirect } from "react-router-dom/cjs/react-router-dom";
 
 const Hero = () => {
 
-  const navigate = Redirect;
+  const handleClick = (event) => {
+    event.preventDefault(); // Prevents the default action
+    window.location.href = '/courses';
+  }
 
-  const handleClick = () => {
-    navigate("/register");
+  const getStarted = (event) => {
+    event.preventDefault(); // Prevents the default action
+    window.location.href = '/registration';
   }
 
   return (
@@ -19,10 +22,10 @@ const Hero = () => {
             <Heading subtitle='Welcome to Simpli-Learn' title='Best Online Education Expertise' />
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             <div className='button'>
-              <button className='primary-btn' onClick={handleClick}>
+              <button type="button hover:bg-red" className='primary-btn' onClick={getStarted} >
                 GET STARTED NOW <i className='fa fa-long-arrow-alt-right'></i>
               </button>
-              <button>
+              <button onClick={handleClick}>
                 VIEW COURSE <i className='fa fa-long-arrow-alt-right'></i>
               </button>
             </div>

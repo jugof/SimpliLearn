@@ -54,7 +54,7 @@ const HAbout = () => {
                       {val.priceAll} / {val.pricePer}
                     </h3>
                   </div>
-                  {/* login and signup component */}
+                  
                   <button className='outline-btn'>ENROLL NOW !</button>
                 </div>
               ))}
