@@ -29,5 +29,5 @@ node_modules/
 # production
 build/
 
-# metadata
+# meta data
 .metadata/
