@@ -51,7 +51,7 @@ const Footer = () => {
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        &copy; 2022 copyright
+        SimpliLearn &copy; 2024 copyright reserved
         {/* <a className="text-white" href="#">
           e-learning.com
         </a> */}
