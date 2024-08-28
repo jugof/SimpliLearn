@@ -253,8 +253,9 @@ function RegisterScreen() {
                 {addressError && (
                   <p style={{ color: "red" }}>Address length should be Min 10 char reuired</p>
                 )}
-                <>
-                  <Label for="">Select Roll</Label>
+
+                {/* <>
+                  <Label for="" >Select role</Label>
                   <Select
                     value={category}
                     onChange={(item) => {
@@ -264,11 +265,27 @@ function RegisterScreen() {
                     // getOptionValue={(item) => item}
                     // getOptionLabel={(item) => item}
                     placeholder={
-                      category === {} ? "Select Category" : category.label
+                      category == {} ? "Select Category" : category.label
                     }
                     required={true}
                   />
-                </>
+                </> */}
+
+                <FormGroup>
+                  <Label for="category">Select role</Label>
+                  <Select
+                    id="category"
+                    placeholder="Select Category"
+                    value={category || null}  // Ensure value is null if nothing is selected
+                    onChange={(item) => {
+                      setCategory(item);
+                    }}
+                    options={option}
+                    isClearable={true}  // Allows clearing the selection and showing placeholder again
+                  />
+                </FormGroup>
+
+
                 
                 <div className="" style={{marginLeft:"13px",marginBottom:"20px"}} >
                         <ReCAPTCHA className="col-sm-8"
@@ -277,7 +294,7 @@ function RegisterScreen() {
                         />
                     </div>
                    
-                <Container className="text-center">
+                <Container className="text-center d-flex gap-3 justify-content-center">
                   <Button type="submit" color="success" >
                     Submit
                   </Button>
